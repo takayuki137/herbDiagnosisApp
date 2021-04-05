@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:backgroundTint="#63000000"
+    android:backgroundTintMode="src_over">
+
+
+    <TextView
+        android:id="@+id/when"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="どんなときに使いたい？"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/alone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ひとりの時間に"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="alone"/>
+
+    <Button
+        android:id="@+id/withFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家族と一緒に"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alone"
+        android:onClick="withFamily" />
+
+    <TextView
+        android:id="@+id/where"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="どちらの場面で使いたい？"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/workOrStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仕事や勉強"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        android:onClick="workOrStudy"/>
+
+    <Button
+        android:id="@+id/breakTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="お休みの時に"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alone"
+        android:visibility="invisible"
+        android:onClick="breakTime"/>
+
+    <TextView
+        android:id="@+id/purpose"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="どちらの目的で使いたい？"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/forWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仕事に集中したい"
+        android:textSize="30dp"
+        android:onClick="forWork"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/whileBreakTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="仕事の間に一息入れたい"
+        android:textSize="30dp"
+        android:onClick="whileBreakTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alone"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/comfortable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="お部屋を快適にしたい"
+        android:textSize="30dp"
+        android:onClick="comfortable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/slow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ゆっくり過ごしたい"
+        android:textSize="30dp"
+        android:onClick="slow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alone"
+        android:visibility="invisible"/>
+
+
+
+    <TextView
+        android:id="@+id/whichtime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="どちらの時間で使いたい？"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/daytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日中"
+        android:textSize="30dp"
+        android:onClick="daytime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/nightTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nighttime"
+        android:text="夜中"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alone" />
+
+    <Button
+        android:id="@+id/outside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="お出かけの時"
+        android:textSize="30dp"
+        android:onClick="outside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/inside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="おうちでくつろぐ"
+        android:textSize="30dp"
+        android:onClick="inside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alone"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:id="@+id/scine"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="どちらのシーンで使いたい？"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/danran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="だんらんの時間"
+        android:onClick="danran"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="お休みの時"
+        android:textSize="30dp"
+        android:onClick="sleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alone"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

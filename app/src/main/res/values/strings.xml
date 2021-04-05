@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">アロマ診断</string>
+    <string name="mint">ペパーミント</string>
+    <string name="lemon">レモンコールドプレスト</string>
+    <string name="orange">スイートオレンジ</string>
+    <string name="berugamotto">ベルガモット</string>
+    <string name="glass">レモングラス</string>
+    <string name="grape">グレープフルーツピンク</string>
+    <string name="yukari">ユーカリ"</string>
+    <string name="majoram">マージョラム</string>
+    <string name="rose">ローズゼラニウム</string>
+    <string name="labenda">ラベンダー</string>
+    <string name="teatree">ティーツリー</string>
+    <string name="radi">ユーカリラディエータ</string>
+</resources>
